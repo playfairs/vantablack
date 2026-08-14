@@ -2,13 +2,13 @@
 // @name         Vantablack Theme for GitHub
 // @namespace    https://github.com/playfairs/vantablack
 // @version      1.0.3
-// @description  An ultra-black GitHub theme
+// @description  An ultra-black theme for GitHub.
 // @author       playfairs
 // @match        https://github.com/*
 // @match        https://gist.github.com/*
 // @grant        GM_addStyle
-// @updateURL    https://raw.githubusercontent.com/playfairs/Vantablack/main/vantablack.user.js
-// @downloadURL  https://raw.githubusercontent.com/playfairs/Vantablack/main/vantablack.user.js
+// @updateURL    https://github.com/playfairs/vantablack/raw/refs/heads/master/vantablack.user.js
+// @downloadURL  https://github.com/playfairs/vantablack/raw/refs/heads/master/vantablack.user.js
 // ==/UserScript==
 
 GM_addStyle(`
