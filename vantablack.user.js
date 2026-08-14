@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Vantablack Theme for GitHub
 // @namespace    https://github.com/playfairs/vantablack
-// @version      1.0.0
+// @version      1.0.2
 // @description  An ultra-black GitHub theme
 // @author       playfairs
 // @match        https://github.com/*
@@ -21,24 +21,64 @@ GM_addStyle(`
         --fgColor-default: #ffffff !important;
         --fgColor-muted: #888888 !important;
         --fgColor-accent: #ffffff !important;
+        --fgColor-link: #ffffff !important;
+        --fgColor-onEmphasis: #ffffff !important;
 
         --borderColor-default: #111111 !important;
         --borderColor-muted: #080808 !important;
-
-        --bgColor-accent-muted: #111111 !important;
+        --borderColor-accent-muted: #111111 !important;
         --borderColor-accent-emphasis: #ffffff !important;
 
+        --bgColor-accent-emphasis: #050505 !important;
+        --bgColor-accent-muted: #080808 !important;
+
         --fgColor-success: #ffffff !important;
+        --bgColor-success-emphasis: #050505 !important;
         --bgColor-success-muted: #080808 !important;
         --borderColor-success-emphasis: #ffffff !important;
+        --borderColor-success-muted: #111111 !important;
 
         --fgColor-open: #ffffff !important;
+        --bgColor-open-emphasis: #050505 !important;
         --bgColor-open-muted: #080808 !important;
         --borderColor-open-emphasis: #ffffff !important;
+        --borderColor-open-muted: #111111 !important;
 
         --fgColor-done: #ffffff !important;
+        --bgColor-done-emphasis: #050505 !important;
         --bgColor-done-muted: #080808 !important;
         --borderColor-done-emphasis: #ffffff !important;
+        --borderColor-done-muted: #111111 !important;
+
+        --fgColor-closed: #ffffff !important;
+        --bgColor-closed-emphasis: #050505 !important;
+        --bgColor-closed-muted: #080808 !important;
+        --borderColor-closed-emphasis: #ffffff !important;
+        --borderColor-closed-muted: #111111 !important;
+
+        --fgColor-danger: #ffffff !important;
+        --bgColor-danger-emphasis: #050505 !important;
+        --bgColor-danger-muted: #080808 !important;
+        --borderColor-danger-emphasis: #ffffff !important;
+        --borderColor-danger-muted: #111111 !important;
+
+        --fgColor-attention: #ffffff !important;
+        --bgColor-attention-emphasis: #050505 !important;
+        --bgColor-attention-muted: #080808 !important;
+        --borderColor-attention-emphasis: #ffffff !important;
+        --borderColor-attention-muted: #111111 !important;
+
+        --fgColor-severe: #ffffff !important;
+        --bgColor-severe-emphasis: #050505 !important;
+        --bgColor-severe-muted: #080808 !important;
+        --borderColor-severe-emphasis: #ffffff !important;
+        --borderColor-severe-muted: #111111 !important;
+
+        --fgColor-sponsors: #ffffff !important;
+        --bgColor-sponsors-emphasis: #050505 !important;
+        --bgColor-sponsors-muted: #080808 !important;
+        --borderColor-sponsors-emphasis: #ffffff !important;
+        --borderColor-sponsors-muted: #111111 !important;
     }
 
     body {
@@ -89,22 +129,45 @@ GM_addStyle(`
         border-color: #222 !important;
     }
 
-    .bgColor-accent-emphasis,
     .bgColor-success-emphasis,
     .bgColor-open-emphasis,
-    .btn-primary {
-        background-color: #fff !important;
-        border-color: #fff !important;
-        color: #000 !important;
+    .bgColor-accent-emphasis {
+        background-color: #050505 !important;
+        border-color: #111 !important;
+        color: #fff !important;
     }
 
-    .bgColor-accent-emphasis:hover,
     .bgColor-success-emphasis:hover,
     .bgColor-open-emphasis:hover,
+    .bgColor-accent-emphasis:hover {
+        background-color: #0a0a0a !important;
+        border-color: #222 !important;
+        color: #fff !important;
+    }
+
+    .bgColor-success-emphasis svg,
+    .bgColor-success-emphasis svg *,
+    .bgColor-open-emphasis svg,
+    .bgColor-open-emphasis svg *,
+    .bgColor-accent-emphasis svg,
+    .bgColor-accent-emphasis svg * {
+        color: #fff !important;
+        fill: #fff !important;
+        stroke: #fff !important;
+    }
+
+    .btn-primary,
     .btn-primary:hover {
-        background-color: #ccc !important;
-        border-color: #ccc !important;
-        color: #000 !important;
+        background: #050505 !important;
+        border-color: #111 !important;
+        color: #fff !important;
+    }
+
+    .btn-primary svg,
+    .btn-primary svg * {
+        color: #fff !important;
+        fill: #fff !important;
+        stroke: #fff !important;
     }
 
     input,
