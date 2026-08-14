@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Vantablack Theme for GitHub
 // @namespace    https://github.com/playfairs/vantablack
-// @version      1.0.2
+// @version      1.0.3
 // @description  An ultra-black GitHub theme
 // @author       playfairs
 // @match        https://github.com/*
@@ -117,54 +117,64 @@ GM_addStyle(`
     }
 
     .Button,
-    .btn {
+    .btn,
+    button {
         background: #050505 !important;
+        background-image: none !important;
         border-color: #111 !important;
         color: #fff !important;
     }
 
     .Button:hover,
-    .btn:hover {
+    .btn:hover,
+    button:hover {
         background: #0a0a0a !important;
-        border-color: #222 !important;
-    }
-
-    .bgColor-success-emphasis,
-    .bgColor-open-emphasis,
-    .bgColor-accent-emphasis {
-        background-color: #050505 !important;
-        border-color: #111 !important;
-        color: #fff !important;
-    }
-
-    .bgColor-success-emphasis:hover,
-    .bgColor-open-emphasis:hover,
-    .bgColor-accent-emphasis:hover {
-        background-color: #0a0a0a !important;
+        background-image: none !important;
         border-color: #222 !important;
         color: #fff !important;
     }
 
-    .bgColor-success-emphasis svg,
-    .bgColor-success-emphasis svg *,
-    .bgColor-open-emphasis svg,
-    .bgColor-open-emphasis svg *,
-    .bgColor-accent-emphasis svg,
-    .bgColor-accent-emphasis svg * {
+    .Button svg,
+    .Button svg *,
+    .btn svg,
+    .btn svg *,
+    button svg,
+    button svg * {
         color: #fff !important;
-        fill: #fff !important;
-        stroke: #fff !important;
+        fill: currentColor !important;
+        stroke: currentColor !important;
     }
 
     .btn-primary,
-    .btn-primary:hover {
+    .btn-primary:hover,
+    .bgColor-accent-emphasis,
+    .bgColor-accent-emphasis:hover,
+    .bgColor-success-emphasis,
+    .bgColor-success-emphasis:hover,
+    .bgColor-open-emphasis,
+    .bgColor-open-emphasis:hover,
+    .bgColor-done-emphasis,
+    .bgColor-done-emphasis:hover,
+    .bgColor-closed-emphasis,
+    .bgColor-closed-emphasis:hover {
         background: #050505 !important;
+        background-image: none !important;
         border-color: #111 !important;
         color: #fff !important;
     }
 
     .btn-primary svg,
-    .btn-primary svg * {
+    .btn-primary svg *,
+    .bgColor-accent-emphasis svg,
+    .bgColor-accent-emphasis svg *,
+    .bgColor-success-emphasis svg,
+    .bgColor-success-emphasis svg *,
+    .bgColor-open-emphasis svg,
+    .bgColor-open-emphasis svg *,
+    .bgColor-done-emphasis svg,
+    .bgColor-done-emphasis svg *,
+    .bgColor-closed-emphasis svg,
+    .bgColor-closed-emphasis svg * {
         color: #fff !important;
         fill: #fff !important;
         stroke: #fff !important;
