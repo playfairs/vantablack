@@ -7,8 +7,8 @@
 // @match        https://github.com/*
 // @match        https://gist.github.com/*
 // @grant        GM_addStyle
-// @updateURL    https://github.com/playfairs/vantablack/raw/refs/heads/master/vantablack.user.js
-// @downloadURL  https://github.com/playfairs/vantablack/raw/refs/heads/master/vantablack.user.js
+// @updateURL    https://raw.githubusercontent.com/playfairs/vantablack/refs/heads/master/vantablack.user.js
+// @downloadURL  https://raw.githubusercontent.com/playfairs/vantablack/refs/heads/master/vantablack.user.js
 // ==/UserScript==
 
 GM_addStyle(`
